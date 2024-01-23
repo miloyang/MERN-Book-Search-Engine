@@ -11,9 +11,7 @@ export default defineConfig({
       '/graphql': {
         target: 'http://localhost:3001',
         secure: false,
-        changeOrigin: true,
-        cache: 'bounded',
-        persistedQueries: false
+        changeOrigin: true
       }
     }
   }

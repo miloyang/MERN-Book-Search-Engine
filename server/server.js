@@ -17,6 +17,7 @@ const startServer = async (typeDefs, resolvers) => {
     typeDefs,
     resolvers,
     context: authMiddleware, 
+    persistedQueries: false,
   });
 
   // Set URL encoded data
